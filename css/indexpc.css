@@ -1,0 +1,329 @@
+body {
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(#e8f0ff, #e0eafc) no-repeat; /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#e8f0ff, #e0eafc) no-repeat; /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#e8f0ff, #e0eafc) no-repeat; /* Firefox 3.6 - 15 */
+    background: linear-gradient(#e8f0ff, #e0eafc) no-repeat fixed top; /* 标准的语法（必须放在最后） */
+    background: url('../img/013e6e5b5b282ea801206a353884b1.jpg') no-repeat;
+    background-size: 100% 640px;
+}
+
+.main {
+    position: relative;
+    width: 78%;
+    min-width: 800px;
+    padding: 0 40px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.cercle {
+    position: absolute;
+    top: -120px;
+    right: -90px;
+    width: 250px;
+    height: 250px;
+    background: #0f8aef1f;
+    border-radius: 50%;
+}
+
+#pentagon1 {
+    position: absolute;
+    top: 400px;
+    left: -190px;
+    width: 217px;
+    border-width: 210px 90px 0;
+    border-style: solid;
+    border-color: #0f8aef50 transparent;
+    transform:rotate(5deg);
+}
+#pentagon1::before {
+    content: "";
+    position: absolute;
+    top: -375px;
+    left: -90px;
+    width: 0;
+    height: 0;
+    border-width: 0 199px 165px;
+    border-style: solid;
+    border-color: transparent transparent #0f8aef50;
+}
+
+#pentagon2 {
+    position: absolute;
+    top: -110px;
+    right: 40px;
+    width: 160px;
+    border-width: 190px 70px 0;
+    border-style: solid;
+    border-color: #0f8aef36 transparent;
+    transform:rotate(190deg);
+}
+#pentagon2::before {
+    content: "";
+    position: absolute;
+    top: -300px;
+    left: -70px;
+    width: 0;
+    height: 0;
+    border-width: 0 150px 110px;
+    border-style: solid;
+    border-color: transparent transparent #0f8aef36;
+}
+
+header {
+    position: relative;
+    padding-top: 40px;
+}
+
+.heard-logo {
+    width: 44px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+	border-radius: 9px;
+}
+
+.logo-fzu {
+    font-size: 22px;
+    color: #fff;
+}
+
+.learnmore {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.learnmore:hover {
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    margin: 79px 44px;
+    -webkit-animation: tocenter 1.5s; /*Safari and Chrome*/
+    animation: tocenter 1.5s;
+}
+@keyframes tocenter {
+    from {
+        opacity: 0.1;
+        margin: 80px -40px;
+    }
+    to {
+        opacity: 1;
+        margin: 80px 44px;
+    }
+}
+@-webkit-keyframes tocenter {
+    from {
+        opacity: 0.1;
+        margin: 80px -40px;
+    }
+    to {
+        opacity: 1;
+        margin: 80px 44px;
+    }
+}
+
+.container-phone {
+    position: relative;
+    flex: 1;
+}
+
+.wrapper {
+    position: absolute;
+    top: 69px;
+    left: 40px;
+}
+
+.banner {
+    width: 240px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.imgList {
+    z-index: 99;
+}
+
+.imgList li {
+    display: none;
+}
+
+.imgList .imgOn {
+    display: inline;
+}
+
+.wrapperimg {
+    width: 240px;
+    height: 427px;
+    border-radius: 1px;
+}
+
+.phone {
+    width: 280px;
+    margin-left: 20px;
+}
+
+.container-introduce {
+    width: 310px;
+}
+
+.logotitle {
+    position: relative;
+    width: 100%;
+    height: 78px;
+    margin-top: 50px;
+}
+
+.container-logo {
+    position: absolute;
+    width: 76px;
+    border-radius: 18px;
+}
+
+.cotainer-title {
+    position: absolute;
+    top: 8px;
+    left: 110px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.cotainer-p {
+    position: absolute;
+    top: 52px;
+    left: 110px;
+    color: #fff;
+}
+
+.summary {
+    margin: 80px 0;
+    color: #fff;
+}
+
+.loadbtn {
+    position: relative;
+    width: 100%;
+    color: #fff;
+}
+
+.load {
+    width: 110px;
+    padding: 7px 12px 6px 12px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .2s,
+                color .2s;
+}
+
+.Androidloadbtn {
+    position: absolute;
+    top: 0;
+    left: 160px;
+}
+
+.load:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #0f8aef;
+}
+
+.tip {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #e9e9e9;
+}
+
+.icon {
+    width: 24px;
+    margin-bottom: 6px;
+    margin-right: 2px;
+}
+
+.title2 {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 24px;
+    letter-spacing: 2PX;
+    color: #1c81d3;
+    text-align: center;
+}
+
+.module-container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 120px;
+}
+
+.module {
+    flex: 1;
+    margin: 35px;
+    padding: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #0f8aef;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: border .5s;
+    cursor: pointer;
+}
+.module:hover {
+    box-shadow: 0 5px 20px #cfcfcf4f;
+    border: 1px solid #0f8aef67;
+}
+
+.classtable {
+    width: 60px;
+    margin: 30px auto;
+    margin-bottom: 40px;
+}
+
+.educational {
+    width: 74px;
+    margin: 30px auto;
+    margin-bottom: 26px;
+}
+
+.yb {
+    width: 68px;
+    margin: 30px auto;
+    margin-bottom: 32px;
+}
+
+.mail {
+    width: 80px;
+    margin: 30px auto;
+    margin-bottom: 40px;
+}
+
+.message {
+    width: 80px;
+    margin: 30px auto;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-weight: normal;
+    margin-bottom: 16px;
+    letter-spacing: 6px;
+}
+
+.module p {
+    color: #acacac;
+}
+
+footer {
+    padding: 36px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #cecece;
+}
+
+.phoneinmoving {
+    display: none;
+}

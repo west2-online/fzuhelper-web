@@ -1,0 +1,137 @@
+header {
+    padding-top: 0.3rem;
+    padding-right: 0.2rem;
+    text-align: right;
+}
+
+.heard-logo {
+    display: none;
+}
+
+.logo-fzu {
+    display: none;
+}
+
+.learnmore {
+    font-size: 0.12rem;
+    color: #0f8aef;
+}
+
+.container {
+    padding: 0.14rem;
+    padding-bottom: 0.1rem;
+    text-align: center;
+}
+
+.container-phone {
+    display: none;
+}
+
+.container-logo {
+    width: 0.9rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+    border: 1px solid #0f8aef;
+    border-radius: 0.26rem;
+}
+
+.cotainer-title {
+    margin-bottom: 0.12rem;
+    font-size: 0.24rem;
+    font-weight: normal;
+    color: #0f8aef;
+}
+
+.cotainer-p {
+    font-size: 0.14rem;
+    color: #0f8aef;
+}
+
+.summary {
+    display: none;
+}
+
+.load {
+    width: 1.6rem;
+    height: 0.35rem;
+    margin: 0.2rem auto;
+    padding-top: 0.05rem;
+    border-radius: 0.1rem;
+    font-size: 0.15rem;
+    background: #0f8aef;
+    color: #fff;
+}
+
+.AppStoreloadbtn {
+    margin-top: 0.32rem;
+}
+
+.icon {
+    width: 0.3rem;
+    margin-bottom: 0.03rem;
+    margin-right: 0.04rem;
+}
+
+.phoneinmoving {
+    width: 2.8rem;
+    margin-top: 0.4rem;
+}
+
+.module-container {
+    display: none;
+}
+
+.title2 {
+    display: none;
+}
+
+.title_contact {
+	display: flex;
+	justify-content: center;
+	margin: 32px auto 0 auto;
+	font-size: 24px;
+    letter-spacing: 2PX;
+    color: #1c81d3;
+}
+
+.module_contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.module_contact .module {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 60%;
+	margin: 16px 0;
+}
+
+.mail {
+    width: 80px;
+    margin: 30px auto;
+    margin-bottom: 16px;
+}
+
+.message {
+    width: 80px;
+    margin: 30px auto;
+    margin-bottom: 16px;
+}
+
+.tip {
+    margin-top: 0.2rem;
+    font-size: 0.12rem;
+    color: #cecece;
+}
+
+footer {
+	margin-top: 32px;
+    padding-bottom: 0.2rem;
+    text-align: center;
+    font-size: 0.12rem;
+    letter-spacing: 0.01rem;
+    color: #cecece;
+}
