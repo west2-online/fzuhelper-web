@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -25,6 +25,9 @@
             doc.addEventListener('DOMContentLoaded', recalc, false);
         })(document, window);
     </script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- index.js先加载，避免加载样式时界面跳变 -->
+    <script src="./index.js"></script>
 </head>
 <body>
 <div class="back"></div>
@@ -104,7 +107,5 @@
         <p>2024 West2online. All Rights Reserved.</p>
     </footer>
 </div>
-<script src="https://lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script>
-<script src="./index.js"></script>
 </body>
 </html>
