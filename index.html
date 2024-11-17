@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -31,87 +32,89 @@
             doc.addEventListener('DOMContentLoaded', set_footer, false);
         })(document, window);
     </script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <!-- index.js先加载，避免加载样式时界面跳变 -->
-    <script src="./index.js"></script>
+    <script src="js/index.js"></script>
 </head>
+
 <body>
-<div class="back"></div>
-<div class="main">
-    <header>
-        <img src="./img/logo.png" class="heard-logo">
-        <span class="logo-fzu">福uu</span>
-        <!--<a class="learnmore" href="https://www.w2fzu.com/" target="view_window">了解更多</a>-->
-    </header>
-    <div class="container">
-        <div class="container-phone">
-            <img src="./img/phone.png" class="phone">
-            <div class="wrapper">
-                <div class="banner">
-                    <ul class="imgList" id="imgList">
-                        <li class="imgOn"><img src="./img/banner1.png" class="wrapperimg"></li>
-                        <li><img src="./img/banner2.png" class="wrapperimg"></li>
-                        <li><img src="./img/banner3.png" class="wrapperimg"></li>
-                        <li><img src="./img/banner4.png" class="wrapperimg"></li>
-                    </ul>
+    <div class="back"></div>
+    <div class="main">
+        <header>
+            <img src="./img/logo.png" class="heard-logo">
+            <span class="logo-fzu">福uu</span>
+            <!--<a class="learnmore" href="https://www.w2fzu.com/" target="view_window">了解更多</a>-->
+        </header>
+        <div class="container">
+            <div class="container-phone">
+                <img src="./img/phone.png" class="phone">
+                <div class="wrapper">
+                    <div class="banner">
+                        <ul class="imgList" id="imgList">
+                            <li class="imgOn"><img src="./img/banner1.png" class="wrapperimg"></li>
+                            <li><img src="./img/banner2.png" class="wrapperimg"></li>
+                            <li><img src="./img/banner3.png" class="wrapperimg"></li>
+                            <li><img src="./img/banner4.png" class="wrapperimg"></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container-introduce">
-            <div class="logotitle">
-                <img src="./img/logo.png" class="container-logo">
-                <h1 class="cotainer-title">福uu</h1>
-                <p class="cotainer-p"></p>
-            </div>
-            <p class="summary">从课表、成绩、考场，<br>到空教室查询、图书馆、教务处，<br>我们从未停止过探索你的需求</p>
-            <div class="loadbtn">
-                <div class="AppStoreloadbtn load" id="AppStoreloadbtn">
-                    <img src="./img/applehover.png" class="icon" id="AppStoreload">
-                    App Store
+            <div class="container-introduce">
+                <div class="logotitle">
+                    <img src="./img/logo.png" class="container-logo">
+                    <h1 class="cotainer-title">福uu</h1>
+                    <p class="cotainer-p"></p>
                 </div>
-                <div class="Androidloadbtn load" id="Androidloadbtn">
-                    <img src="./img/Androidhover.png" class="icon" id="Androidload">
-                    Android版
+                <p class="summary">从课表、成绩、考场，<br>到空教室查询、图书馆、教务处，<br>我们从未停止过探索你的需求</p>
+                <div class="loadbtn">
+                    <div class="AppStoreloadbtn load" id="AppStoreloadbtn">
+                        <img src="./img/applehover.png" class="icon" id="AppStoreload">
+                        App Store
+                    </div>
+                    <div class="Androidloadbtn load" id="Androidloadbtn">
+                        <img src="./img/Androidhover.png" class="icon" id="Androidload">
+                        Android版
+                    </div>
                 </div>
+                <img src="./img/phone2.png" class="phoneinmoving">
+                <p class="tip">支持 Android、iPhone、iPad 与 iPad Pro</p>
             </div>
-            <img src="./img/phone2.png" class="phoneinmoving">
-            <p class="tip">支持 Android、iPhone、iPad 与 iPad Pro</p>
         </div>
+        <p class="title2">DIFFERENT UNIVERSERSITY LIFE</p>
+        <div class="module-container">
+            <div class="module">
+                <img src="./img/classtable.png" class="classtable">
+                <h2>课表</h2>
+                <p>简洁的课程模块界面，<br>一键获取任课老师信息</p>
+            </div>
+            <div class="module">
+                <img src="./img/educational.png" class="educational">
+                <h2>教务</h2>
+                <p>实时推送教务通知，<br>同步更新考场信息</p>
+            </div>
+            <div class="module">
+                <img src="./img/yb.png" class="yb">
+                <h2>学业</h2>
+                <p>一键直达学业状况，<br>轻松查询学分成绩</p>
+            </div>
+        </div>
+        <p class="title2 title_contact">CONTACT US</p>
+        <div class="module-container module_contact">
+            <div class="module">
+                <img src="./img/mail.png" class="mail">
+                <h2>邮箱</h2>
+                <p>admin@west2.online</p>
+            </div>
+            <div class="module">
+                <img src="./img/message.png" class="mail">
+                <h2>Q群</h2>
+                <p>694437914</p>
+            </div>
+        </div>
+        <footer>
+            <p class="footer_str"></p>
+        </footer>
     </div>
-    <p class="title2">DIFFERENT UNIVERSERSITY LIFE</p>
-    <div class="module-container">
-        <div class="module">
-            <img src="./img/classtable.png" class="classtable">
-            <h2>课表</h2>
-            <p>简洁的课程模块界面，<br>一键获取任课老师信息</p>
-        </div>
-        <div class="module">
-            <img src="./img/educational.png" class="educational">
-            <h2>教务</h2>
-            <p>实时推送教务通知，<br>同步更新考场信息</p>
-        </div>
-        <div class="module">
-            <img src="./img/yb.png" class="yb">
-            <h2>学业</h2>
-            <p>一键直达学业状况，<br>轻松查询学分成绩</p>
-        </div>
-    </div>
-    <p class="title2 title_contact">CONTACT US</p>
-    <div class="module-container module_contact">
-        <div class="module">
-            <img src="./img/mail.png" class="mail">
-            <h2>邮箱</h2>
-            <p>admin@west2.online</p>
-        </div>
-        <div class="module">
-            <img src="./img/message.png" class="mail">
-            <h2>Q群</h2>
-            <p>694437914</p>
-        </div>
-    </div>
-    <footer>
-        <p class="footer_str"></p>
-    </footer>
-</div>
 </body>
+
 </html>
