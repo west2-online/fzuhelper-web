@@ -83,7 +83,7 @@ $(function () {
                 window.open(data.url.replace("http:", "https:"));
             }
         }
-        ajax.open('get', 'https://url.w2fzu.com/version.json');
+        ajax.open('get', 'https://fzuhelper.west2.online/version.json');
         ajax.send();
     })
 
