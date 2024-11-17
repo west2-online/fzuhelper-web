@@ -83,7 +83,8 @@ $(function () {
                 window.open(data.url.replace("http:", "https:"));
             }
         }
-        ajax.open('get', 'https://fzuhelper.west2.online/version.json');
+        // fzuhelper.west2.online 现在兼顾了 URL 的功能,前端页面要么放后端要么就得换域名
+        ajax.open('get', 'https://url.w2fzu.com/version.json');
         ajax.send();
     })
 
