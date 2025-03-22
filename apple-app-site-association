@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "MEWHFZ92DY.FzuHelper.FzuHelper",
+                "paths": ["*"]
+            }
+        ]
+    }
+}
