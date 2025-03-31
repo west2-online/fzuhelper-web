@@ -89,7 +89,7 @@ $(function () {
       if (ajax.readyState === 4 && ajax.status === 200) {
         const data = JSON.parse(ajax.responseText);
         // 安全原因，https的网页不能访问http内容
-        window.open(data.url.replace("http:", "https:"));
+        window.open(data.data.url.replace("http:", "https:"));
       }
     };
     // fzuhelper.west2.online 现在兼顾了 URL 的功能,前端页面要么放后端要么就得换域名
