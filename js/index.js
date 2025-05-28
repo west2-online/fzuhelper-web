@@ -78,8 +78,17 @@ $(function () {
     window.open("https://apps.apple.com/app/%E7%A6%8Fuu/id866768101");
   });
 
+  function isWxOrQQ() {
+    var ua = navigator.userAgent.toLowerCase();
+    return (ua.indexOf('micromessenger') !== -1 || ua.indexOf('qq') !== -1);
+  }
+
   Androidloadbtn.on("click", function () {
-    window.open("https://m.malink.cn/s/iUZr6f")
+    if (isWxOrQQ()) {
+      window.open("https://a.app.qq.com/o/simple.jsp?pkgname=com.helper.west2ol.fzuhelper")
+    } else {
+      window.open("https://m.malink.cn/s/iUZr6f")
+    }
     //   let ajax;
     //   if (window.XMLHttpRequest) {
     //     ajax = new XMLHttpRequest();
