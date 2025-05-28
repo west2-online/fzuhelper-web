@@ -79,21 +79,22 @@ $(function () {
   });
 
   Androidloadbtn.on("click", function () {
-    let ajax;
-    if (window.XMLHttpRequest) {
-      ajax = new XMLHttpRequest();
-    } else {
-      ajax = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    ajax.onreadystatechange = function () {
-      if (ajax.readyState === 4 && ajax.status === 200) {
-        const data = JSON.parse(ajax.responseText);
-        // 安全原因，https的网页不能访问http内容
-        window.open(data.data.url.replace("http:", "https:"));
-      }
-    };
-    // fzuhelper.west2.online 现在兼顾了 URL 的功能,前端页面要么放后端要么就得换域名
-    ajax.open("get", "https://fzuhelper.west2.online/api/v2/url/version.json");
-    ajax.send();
+    window.open("https://m.malink.cn/s/iUZr6f")
+    //   let ajax;
+    //   if (window.XMLHttpRequest) {
+    //     ajax = new XMLHttpRequest();
+    //   } else {
+    //     ajax = new ActiveXObject("Microsoft.XMLHTTP");
+    //   }
+    //   ajax.onreadystatechange = function () {
+    //     if (ajax.readyState === 4 && ajax.status === 200) {
+    //       const data = JSON.parse(ajax.responseText);
+    //       // 安全原因，https的网页不能访问http内容
+    //       window.open(data.data.url.replace("http:", "https:"));
+    //     }
+    //   };
+    //   // fzuhelper.west2.online 现在兼顾了 URL 的功能,前端页面要么放后端要么就得换域名
+    //   ajax.open("get", "https://fzuhelper.west2.online/api/v2/url/version.json");
+    //   ajax.send();
   });
 });
