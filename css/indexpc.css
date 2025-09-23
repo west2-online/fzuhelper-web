@@ -201,14 +201,19 @@ header {
 }
 
 .summary {
-    margin: 80px 0;
+    margin: 40px 0;
     color: #fff;
 }
 
+/* 四宫格按钮区域：2x2 布局 */
 .loadbtn {
     position: relative;
     width: 100%;
     color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 15px 15px;
 }
 
 .load {
@@ -221,11 +226,11 @@ header {
                 color .2s;
 }
 
-.Androidloadbtn {
-    position: absolute;
-    top: 0;
-    left: 160px;
-}
+/* 图标切换：默认显示 hover（与原来视觉一致），在非移动端悬停显示 normal */
+.icon-normal { display: none; }
+.icon-hover { display: inline; }
+.load:hover .icon-normal { display: inline; }
+.load:hover .icon-hover { display: none; }
 
 .load:hover {
     background-color: rgba(255, 255, 255, 0.9);

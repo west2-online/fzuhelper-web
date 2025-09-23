@@ -62,6 +62,10 @@ header {
     color: #fff;
 }
 
+/* 移动端始终显示 hover 图 */
+.icon-normal { display: none; }
+.icon-hover { display: inline; }
+
 .AppStoreloadbtn {
     margin-top: 0.32rem;
 }

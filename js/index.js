@@ -59,70 +59,34 @@ $(function () {
       .animate({ opacity: 1.0 }, 1000);
   }
 
-  const AppStoreloadbtn = $("#AppStoreloadbtn");
-  const Androidloadbtn = $("#Androidloadbtn");
-  // 使用两张图（normal/hover）通过 show/hide 切换，避免重复请求
-  const AppStoreload_normal = $("#AppStoreload_normal");
-  const AppStoreload_hover = $("#AppStoreload_hover");
-  const Androidload_normal = $("#Androidload_normal");
-  const Androidload_hover = $("#Androidload_hover");
-  // 图片已在 index.html 中加载，直接通过显示/隐藏两张图来切换
-  if (!isMobile()) {
-    AppStoreloadbtn.on("mouseover", function () {
-      AppStoreload_normal.show();
-      AppStoreload_hover.hide();
-    });
-    AppStoreloadbtn.on("mouseout", function () {
-      AppStoreload_normal.hide();
-      AppStoreload_hover.show();
-    });
+  // const Androidloadbtn = $("#Androidloadbtn");
 
-    Androidloadbtn.on("mouseover", function () {
-      Androidload_normal.show();
-      Androidload_hover.hide();
-    });
-    Androidloadbtn.on("mouseout", function () {
-      Androidload_normal.hide();
-      Androidload_hover.show();
-    });
-  } else {
-    // 移动端默认显示 hover 图
-    AppStoreload_normal.hide();
-    AppStoreload_hover.show();
-    Androidload_normal.hide();
-    Androidload_hover.show();
-  }
+  // function isWxOrQQ() {
+  //   var ua = navigator.userAgent.toLowerCase();
+  //   return (ua.indexOf('micromessenger') !== -1 || ua.indexOf('qq') !== -1);
+  // }
 
-  AppStoreloadbtn.on("click", function () {
-    window.open("https://apps.apple.com/app/%E7%A6%8Fuu/id866768101");
-  });
-
-  function isWxOrQQ() {
-    var ua = navigator.userAgent.toLowerCase();
-    return (ua.indexOf('micromessenger') !== -1 || ua.indexOf('qq') !== -1);
-  }
-
-  Androidloadbtn.on("click", function () {
-    if (isWxOrQQ()) {
-      window.open("https://a.app.qq.com/o/simple.jsp?pkgname=com.helper.west2ol.fzuhelper")
-    } else {
-      window.open("https://m.malink.cn/s/iUZr6f")
-    }
-    //   let ajax;
-    //   if (window.XMLHttpRequest) {
-    //     ajax = new XMLHttpRequest();
-    //   } else {
-    //     ajax = new ActiveXObject("Microsoft.XMLHTTP");
-    //   }
-    //   ajax.onreadystatechange = function () {
-    //     if (ajax.readyState === 4 && ajax.status === 200) {
-    //       const data = JSON.parse(ajax.responseText);
-    //       // 安全原因，https的网页不能访问http内容
-    //       window.open(data.data.url.replace("http:", "https:"));
-    //     }
-    //   };
-    //   // fzuhelper.west2.online 现在兼顾了 URL 的功能,前端页面要么放后端要么就得换域名
-    //   ajax.open("get", "https://fzuhelper.west2.online/api/v2/url/version.json");
-    //   ajax.send();
-  });
+  // Androidloadbtn.on("click", function () {
+  //   if (isWxOrQQ()) {
+  //     window.open("https://a.app.qq.com/o/simple.jsp?pkgname=com.helper.west2ol.fzuhelper")
+  //   } else {
+  //     window.open("https://m.malink.cn/s/iUZr6f")
+  //   }
+  //   //   let ajax;
+  //   //   if (window.XMLHttpRequest) {
+  //   //     ajax = new XMLHttpRequest();
+  //   //   } else {
+  //   //     ajax = new ActiveXObject("Microsoft.XMLHTTP");
+  //   //   }
+  //   //   ajax.onreadystatechange = function () {
+  //   //     if (ajax.readyState === 4 && ajax.status === 200) {
+  //   //       const data = JSON.parse(ajax.responseText);
+  //   //       // 安全原因，https的网页不能访问http内容
+  //   //       window.open(data.data.url.replace("http:", "https:"));
+  //   //     }
+  //   //   };
+  //   //   // fzuhelper.west2.online 现在兼顾了 URL 的功能,前端页面要么放后端要么就得换域名
+  //   //   ajax.open("get", "https://fzuhelper.west2.online/api/v2/url/version.json");
+  //   //   ajax.send();
+  // });
 });

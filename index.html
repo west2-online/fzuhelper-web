@@ -78,16 +78,30 @@
           从课表、成绩、考场，<br />到空教室查询、图书馆、教务处，<br />我们从未停止过探索你的需求
         </p>
         <div class="loadbtn">
-          <div class="AppStoreloadbtn load" id="AppStoreloadbtn">
-            <!-- 两张图：normal 与 hover，通过 id 切换显示 -->
-            <img src="./img/apple.png" class="icon" id="AppStoreload_normal" style="display:none" />
-            <img src="./img/applehover.png" class="icon" id="AppStoreload_hover" />
+          <div class="AppStoreloadbtn load" id="AppStoreloadbtn"
+            onclick="window.open('https://apps.apple.com/cn/app/id866768101')">
+            <!-- 两张图：normal 与 hover，通过 class 切换显示 -->
+            <img src="./img/apple.png" class="icon icon-normal" id="AppStoreload_normal" />
+            <img src="./img/applehover.png" class="icon icon-hover" id="AppStoreload_hover" />
             App Store
           </div>
-          <div class="Androidloadbtn load" id="Androidloadbtn">
-            <img src="./img/Android.png" class="icon" id="Androidload_normal" style="display:none" />
-            <img src="./img/Androidhover.png" class="icon" id="Androidload_hover" />
+          <div class="TestFlightloadbtn load" id="TestFlightloadbtn"
+            onclick="window.open('https://testflight.apple.com/join/UubMBYAm')">
+            <img src="./img/apple.png" class="icon icon-normal" id="TestFlightload_normal" />
+            <img src="./img/applehover.png" class="icon icon-hover" id="TestFlightload_hover" />
+            TestFlight
+          </div>
+          <div class="Androidloadbtn load" id="Androidloadbtn"
+            onclick="window.open(navigator.userAgent.toLowerCase().indexOf('micromessenger' || 'qq') !== -1 ? 'https://a.app.qq.com/o/simple.jsp?pkgname=com.helper.west2ol.fzuhelper' : 'https://m.malink.cn/s/iUZr6f')">
+            <img src="./img/Android.png" class="icon icon-normal" id="Androidload_normal" />
+            <img src="./img/Androidhover.png" class="icon icon-hover" id="Androidload_hover" />
             Android版
+          </div>
+          <div class="AndroidOldloadbtn load" id="AndroidOldloadbtn"
+            onclick="window.open('https://download.w2fzu.com/apk/FzuHelper_6.3.4.apk')">
+            <img src="./img/Android.png" class="icon icon-normal" id="AndroidOldload_normal" />
+            <img src="./img/Androidhover.png" class="icon icon-hover" id="AndroidOldload_hover" />
+            怀旧版
           </div>
         </div>
         <img src="./img/newbanner/phone.webp" class="phoneinmoving" />
