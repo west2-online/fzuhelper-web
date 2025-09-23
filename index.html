@@ -9,7 +9,9 @@
   <meta name="apple-itunes-app" content="app-id=866768101" />
   <title>福uu - 综合性最强的福大校内App</title>
   <link type="text/css" rel="stylesheet" href="./css/basic.css" />
-  <link rel="icon" href="/img/logo.png" />
+  <link rel="icon" href="./img/logo.png" />
+  <!-- 预加载图片 -->
+  <link rel="preload" as="image" href="./img/background.jpg" />
   <script>
     (function (doc, win) {
       const docEl = doc.documentElement;
@@ -77,11 +79,14 @@
         </p>
         <div class="loadbtn">
           <div class="AppStoreloadbtn load" id="AppStoreloadbtn">
-            <img src="./img/applehover.png" class="icon" id="AppStoreload" />
+            <!-- 两张图：normal 与 hover，通过 id 切换显示，避免 hover 时修改 src -->
+            <img src="./img/apple.png" class="icon" id="AppStoreload_normal" style="display:none" />
+            <img src="./img/applehover.png" class="icon" id="AppStoreload_hover" />
             App Store
           </div>
           <div class="Androidloadbtn load" id="Androidloadbtn">
-            <img src="./img/Androidhover.png" class="icon" id="Androidload" />
+            <img src="./img/Android.png" class="icon" id="Androidload_normal" style="display:none" />
+            <img src="./img/Androidhover.png" class="icon" id="Androidload_hover" />
             Android版
           </div>
         </div>

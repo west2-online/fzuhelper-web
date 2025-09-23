@@ -16,9 +16,13 @@ function chooseStyle() {
   }
 }
 
+/**
+ * 动态插入样式表
+ * @param {string[]} cssArr
+ */
 function setStyle(cssArr) {
-  let i = 0;
-  const len = cssArr.length;
+  var i = 0;
+  var len = cssArr.length;
   for (i; i < len; i++) {
     document.write(
       '<link href="' + cssArr[i] + '" type="text/css" rel=stylesheet>'
@@ -41,6 +45,10 @@ $(function () {
     changeTo(curIndex);
   }, 3000);
 
+  /**
+   * 切换轮播图到指定索引
+   * @param {number} num
+   */
   function changeTo(num) {
     $(".imgList")
       .find("li")
@@ -53,25 +61,36 @@ $(function () {
 
   const AppStoreloadbtn = $("#AppStoreloadbtn");
   const Androidloadbtn = $("#Androidloadbtn");
-  const AppStoreloadImg = $("#AppStoreload");
-  const AndroidloadImg = $("#Androidload");
+  // 使用两张图（normal/hover）通过 show/hide 切换，避免重复请求
+  const AppStoreload_normal = $("#AppStoreload_normal");
+  const AppStoreload_hover = $("#AppStoreload_hover");
+  const Androidload_normal = $("#Androidload_normal");
+  const Androidload_hover = $("#Androidload_hover");
+  // 图片已在 index.html 中加载，直接通过显示/隐藏两张图来切换
   if (!isMobile()) {
     AppStoreloadbtn.on("mouseover", function () {
-      AppStoreloadImg.attr("src", "./img/apple.png");
+      AppStoreload_normal.show();
+      AppStoreload_hover.hide();
     });
     AppStoreloadbtn.on("mouseout", function () {
-      AppStoreloadImg.attr("src", "./img/applehover.png");
+      AppStoreload_normal.hide();
+      AppStoreload_hover.show();
     });
 
     Androidloadbtn.on("mouseover", function () {
-      AndroidloadImg.attr("src", "./img/Android.png");
+      Androidload_normal.show();
+      Androidload_hover.hide();
     });
     Androidloadbtn.on("mouseout", function () {
-      AndroidloadImg.attr("src", "./img/Androidhover.png");
+      Androidload_normal.hide();
+      Androidload_hover.show();
     });
   } else {
-    AppStoreloadImg.attr("src", "./img/applehover.png");
-    AndroidloadImg.attr("src", "./img/Androidhover.png");
+    // 移动端默认显示 hover 图
+    AppStoreload_normal.hide();
+    AppStoreload_hover.show();
+    Androidload_normal.hide();
+    Androidload_hover.show();
   }
 
   AppStoreloadbtn.on("click", function () {
