@@ -46,11 +46,11 @@ jobs:
         run: sleep 10
 
       - name: Refresh Tencent Cloud CDN
-        uses: linrongda/tencent-cdn-action@v1.5
+        uses: linrongda/tencent-cdn-action@v2
         with:
           secret_id: ${{ secrets.QCLOUD_SECRET_ID }}
           secret_key: ${{ secrets.QCLOUD_SECRET_KEY }}
           action: purgePath
-          cdn-paths: '["http://fzuhelperapp.west2.online/"]'
-          eo-zoneid: ${{ secrets.EDGEONE_ZONE_ID }}
-          eo-paths: '["http://fzuhelper.w2fzu.com/"]'
+          paths: |
+            http://fzuhelperapp.west2.online/
+            ${{ secrets.EDGEONE_ZONE_ID }} http://fzuhelper.w2fzu.com/
